@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title></title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="{% static 'registerStyle.css' %}">
+        </head>
+        <body>
+          <div id="partition">
+            <!-- left -->
+            <div id="left">
+                
+                    <div id="header">Signup</div>
+                    <div id="detailsList">
+                        <Input type="text" placeholder="Enter name"></Input>
+                        <Input type="text" placeholder="Enter email"></Input>
+                        <Input type="text" placeholder="Enter password"></Input>
+                        <Input type="text" placeholder="Enter repeat password"></Input>
+                    </div>
+                    <input id="button" type="button" value="Register">
+                    <div><a id="already" href="http://127.0.0.1:8000/imageGeneratorAIApp/login/">I am already a member</a></div>
+               
+            </div>
+            <!-- right -->
+            <div id="right">
+                <img src="{% static 'images/register.jpg' %}"/>
+                <!-- <div><a id="already" href="">I am already a member</a></div> -->
+            </div>
+        </div>
+            <script src="" async defer></script>
+        </body>
+    </html>
